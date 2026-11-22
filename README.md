@@ -80,4 +80,8 @@ uv run streamlit run src/app.py
 
 ```text
 Analyze the food delivery market in Nepal.
-```     
+```
+
+## Sample output
+
+See `sample_outputs/sample_report.md`.
