@@ -1,0 +1,25 @@
+[project]
+name = "mra-market-research-agent"
+version = "0.1.0"
+description = "A basic Streamlit application that generates a short market research brief using a sequential multi-agent workflow."
+readme = "README.md"
+authors = [
+    { name = "Aaryan Shakya", email = "nayranewar33@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-core>=1.8.4",
+    "langchain-openrouter>=0.3.0",
+    "langgraph>=1.2.24",
+    "pydantic>=2.14.4",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.67.0",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+mra-market-research-agent = "mra_market_research_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
