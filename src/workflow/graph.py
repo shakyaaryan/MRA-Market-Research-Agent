@@ -6,6 +6,10 @@ from agents.researcher import researcher_agent
 from agents.orchestrator import initialize_workflow, orchestrator_agent
 from schemas.state import ResearchState
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 def route_after_critic(state: ResearchState) -> str:
     """Allow at most one revision after the first critic review."""

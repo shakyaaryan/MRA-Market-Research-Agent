@@ -2,7 +2,7 @@ import json
 
 from langchain_core.messages import HumanMessage, SystemMessage
 
-from agents.analyst import get_llm
+from utils.llm import get_llm
 from schemas.research import CriticReview
 from schemas.state import ResearchState
 
